@@ -71,7 +71,7 @@ app.get('/fetchDealers', async (req, res) => {
 app.get('/fetchDealers/:state', async (req, res) => {
 //Write your code here
   try{
-    const femboy = await Dealerships.find({ dealerhip: req.params.state });
+    const femboy = await Dealerships.find({ state: req.params.state });
     res.json(femboy);
   }catch{
     res.status(500).json( {error: 'Error fetching dealerships'} )
@@ -82,7 +82,7 @@ app.get('/fetchDealers/:state', async (req, res) => {
 app.get('/fetchDealer/:id', async (req, res) => {
 //Write your code here
   try{
-    const femdom = await Dealerships.find({ dealership: req.params.id})
+    const femdom = await Dealerships.find({ id: req.params.id})
     res.json(femdom);
   } catch {
     res.status(500).json({error: 'Error fetching dealership'})
