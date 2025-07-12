@@ -1,7 +1,7 @@
 import LoginPanel from "./components/Login/Login"
 import RegisterPanel from "./components/Register/Register"
 import { Routes, Route } from "react-router-dom"
-import Dealers from './components/Dealers/Dealer'
+import Dealers from './components/Dealers/Dealers'
 
 function App() {
   return (
